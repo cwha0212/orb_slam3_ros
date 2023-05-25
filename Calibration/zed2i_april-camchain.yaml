@@ -5,4 +5,4 @@ cam0:
   distortion_model: radtan
   intrinsics: [458.9432286546919, 457.5637533402653, 367.0272509347057, 249.3128033381081]
   resolution: [752, 480]
-  rostopic: /cam0/image_raw
+  rostopic: /zed2i/zed_node/right_raw/image_raw_color
