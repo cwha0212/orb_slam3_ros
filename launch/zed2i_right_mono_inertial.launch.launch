@@ -4,16 +4,16 @@
     <!-- Main node -->
     <node name="orb_slam3" pkg="orb_slam3_ros" type="ros_mono_inertial" output="screen">
         <!-- change the topics according to the dataset -->
-        <remap from="/camera/image_raw"     to="/image"/>
+        <remap from="/camera/image_raw"     to="/zed2i/zed_node/right/image_rect_color"/>
         <remap from="/imu"                  to="/zed2i/zed_node/imu/data_raw"/>
 
         <!-- Parameters for original ORB-SLAM3 -->
         <param name="voc_file"      type="string" value="$(find orb_slam3_ros)/orb_slam3/Vocabulary/ORBvoc.txt.bin"/>
-        <param name="settings_file" type="string" value="$(find orb_slam3_ros)/config/Monocular-Inertial/Zed2i.yaml"/>
+        <param name="settings_file" type="string" value="$(find orb_slam3_ros)/config/Monocular-Inertial/Zed2i_right.yaml"/>
 
         <!-- Parameters for ROS -->
         <param name="world_frame_id"    type="string"   value="world" />
-        <param name="cam_frame_id"      type="string"   value="zed2i_left_camera_optical_frame" />
+        <param name="cam_frame_id"      type="string"   value="zed2i_right_camera_optical_frame" />
         <param name="imu_frame_id"      type="string"   value="zed2i/zed_node/imu/data" />
         <param name="enable_pangolin"   type="bool"     value="true" />
     </node>
