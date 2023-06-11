@@ -2,12 +2,12 @@ rosrun kalibr kalibr_calibrate_imu_camera \
 	--target april_6x6.yaml \
 	--imu imu_zed2i.yaml \
 	--imu-models calibrated \
-	--cam cam_april-camchain.yaml \
-	--bag 2023-05-25-11-43-51.bag
+	--cam zed2i_left.yaml \
+	--bag /media/chang/jairlab_ssd/DATA/lidar_data/calibration/calibration_2023-05-25-17-47-22.bag
 
 
 rosrun kalibr kalibr_calibrate_cameras \
-	--bag 2023-05-25-11-43-51.bag \
+	--bag /media/chang/jairlab_ssd/DATA/lidar_data/calibration/calibration_2023-05-25-17-47-22.bag \
   --topics /zed2i/zed_node/left/image_rect_color \
   --models pinhole-radtan \
   --target april_6x6.yaml
