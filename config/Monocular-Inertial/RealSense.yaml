@@ -45,7 +45,7 @@ IMU.InsertKFsWhenLost: 0
 # IMU noise (Use those from VINS-mono)
 IMU.NoiseGyro: 2e-4
 IMU.NoiseAcc: 2e-3
-IMU.GyroWalk: 3e-6
+IMU.GyroWalk: 4e-6
 IMU.AccWalk: 1e-4
 IMU.Frequency: 400.0
 #--------------------------------------------------------------------------------------------
