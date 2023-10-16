@@ -47,12 +47,12 @@ IMU.NoiseGyro: 2e-4
 IMU.NoiseAcc: 2e-3
 IMU.GyroWalk: 4e-6
 IMU.AccWalk: 1e-4
-IMU.Frequency: 400.0
+IMU.Frequency: 200.0
 #--------------------------------------------------------------------------------------------
 # ORB Parameters
 #--------------------------------------------------------------------------------------------
 # ORB Extractor: Number of features per image
-ORBextractor.nFeatures: 1250
+ORBextractor.nFeatures: 2000
 
 # ORB Extractor: Scale factor between levels in the scale pyramid 	
 ORBextractor.scaleFactor: 1.2
