@@ -8,16 +8,16 @@ File.version: "1.0"
 Camera.type: "PinHole"
 
 # Left Camera calibration and distortion parameters (OpenCV)
-Camera1.fx: 626.1235231523132
-Camera1.fy: 625.3361922442864
-Camera1.cx: 631.7757713537166
-Camera1.cy: 372.3002002818761
+Camera1.fx: 629.402865024802
+Camera1.fy: 628.4971370251161
+Camera1.cx: 632.6855912386396
+Camera1.cy: 371.4581241881368
 
 # distortion parameters
-Camera1.k1: -0.045987253188908096
-Camera1.k2: 0.0290394344377956
-Camera1.p1: 0.0006996531716807938
-Camera1.p2: -0.0001966424857554661
+Camera1.k1: -0.04320147958325064
+Camera1.k2: 0.027794734523045966
+Camera1.p1: 0.0005465573205063677
+Camera1.p2: 5.1422537790145536e-05
 
 # Camera resolution
 Camera.width: 1280
@@ -34,25 +34,25 @@ IMU.T_b_c1: !!opencv-matrix
    rows: 4
    cols: 4
    dt: f
-   data: [0.99999406, 0.00301866, 0.00166183, -0.02992798,
-         -0.00303696, 0.99993356, 0.01111986, -0.01096964,
-        -0.00162816, -0.01112484, 0.99993679, -0.02996924,
+   data: [0.999999, 0.00126545, 0.00062654, -0.0272697,
+         -0.00127482, 0.99988381, 0.01519005, -0.0172893,
+        -0.00060724, -0.01519083, 0.99988443, -0.02422066,
          0.0, 0.0, 0.0, 1.0]
 
 # Do not insert KFs when recently lost
 IMU.InsertKFsWhenLost: 0
 
 # IMU noise (Use those from VINS-mono)
-IMU.NoiseGyro: 1e-3
-IMU.NoiseAcc: 8e-4
-IMU.GyroWalk: 3e-5
-IMU.AccWalk: 1e-3
+IMU.NoiseGyro: 2e-4
+IMU.NoiseAcc: 2e-3
+IMU.GyroWalk: 4e-6
+IMU.AccWalk: 1e-4
 IMU.Frequency: 200.0
 #--------------------------------------------------------------------------------------------
 # ORB Parameters
 #--------------------------------------------------------------------------------------------
 # ORB Extractor: Number of features per image
-ORBextractor.nFeatures: 1250
+ORBextractor.nFeatures: 3000
 
 # ORB Extractor: Scale factor between levels in the scale pyramid 	
 ORBextractor.scaleFactor: 1.2
